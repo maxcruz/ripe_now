@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="login_logo_size" tools:keep="@dimen/login_logo_size">270dp</dimen>
+    <dimen name="splash_logo_size">200dp</dimen>
+    <dimen name="splash_progress_height">4dp</dimen>
+</resources>
