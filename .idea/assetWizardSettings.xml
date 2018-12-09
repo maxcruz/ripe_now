@@ -91,7 +91,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/Applications/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_search_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/Applications/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/communication/ic_location_on_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -101,10 +101,9 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="ffffff" />
-                            <entry key="outputName" value="ic_search" />
+                            <entry key="outputName" value="ic_location" />
                             <entry key="overrideSize" value="true" />
-                            <entry key="sourceFile" value="$USER_HOME$/Downloads/ripe_now_logo.svg" />
+                            <entry key="sourceFile" value="$USER_HOME$/Downloads/food-apple-outline.svg" />
                           </map>
                         </option>
                       </PersistentState>

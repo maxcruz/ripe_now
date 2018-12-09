@@ -9,5 +9,9 @@
     <color name="materialGreenA200">#69F0AE</color>
     <color name="materialLime50">#F9FBE7</color>
     <color name="materialOrange50">#FFF3E0</color>
+    <color name="materialRed500">#F44336</color>
     <color name="white">#FFFFFF</color>
+    <color name="blackAlpha50">#80000000</color>
+    <color name="materialBlueGray300">#78909c</color>
+
 </resources>

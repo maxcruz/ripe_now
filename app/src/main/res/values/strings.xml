@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name" translatable="false">Ripe Now!</string>
+    <string name="menu_map">Map</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_frequent_stores">Frequent Stores</string>
+    <string name="menu_more_activity">More Activity</string>
+    <string name="store_item_closed">CLOSED</string>
 </resources>

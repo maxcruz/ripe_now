@@ -3,4 +3,12 @@
     <dimen name="login_logo_size" tools:keep="@dimen/login_logo_size">270dp</dimen>
     <dimen name="splash_logo_size">200dp</dimen>
     <dimen name="splash_progress_height">4dp</dimen>
+    <dimen name="store_item_height">190dp</dimen>
+    <dimen name="store_item_margin">12dp</dimen>
+    <dimen name="store_item_frame_height">140dp</dimen>
+    <dimen name="store_item_frame_title_padding">10dp</dimen>
+    <dimen name="store_item_frame_title_size">18sp</dimen>
+    <dimen name="store_item_elevation">9dp</dimen>
+    <dimen name="store_item_chip_margin">8dp</dimen>
+    <dimen name="store_item_address_margin">12dp</dimen>
 </resources>

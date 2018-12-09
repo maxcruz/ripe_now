@@ -5,11 +5,11 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.drawable.AnimationDrawable
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
+import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import app.ripenow.android.BuildConfig
 import app.ripenow.android.R
 import app.ripenow.android.login.Authenticable
@@ -64,7 +64,7 @@ class SplashFragment : Fragment(), Authenticable by FirebaseAuthentication()  {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == RC_SIGN_IN) {
             onAuthenticationResult(resultCode, data) {
-                findNavController().navigate(R.id.action_splashFragment_to_storeListFragment)
+                layout.findNavController().navigate(R.id.action_splashFragment_to_storeListFragment)
             }
         }
     }
