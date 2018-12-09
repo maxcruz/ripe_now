@@ -11,7 +11,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/store_item_height"
             android:layout_margin="@dimen/store_item_margin"
-            app:cardCornerRadius="8dp"
+            app:cardCornerRadius="@dimen/card_radius"
             app:cardElevation="@dimen/store_item_elevation">
 
         <FrameLayout

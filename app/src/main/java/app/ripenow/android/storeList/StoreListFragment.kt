@@ -4,6 +4,9 @@ package app.ripenow.android.storeList
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavOptions
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.recyclerview.widget.LinearLayoutManager
 import app.ripenow.android.R
 import app.ripenow.android.core.image.GlideImageLoader
@@ -34,7 +37,11 @@ class StoreListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val adapter = StoreAdapter(GlideImageLoader(requireContext())) {
+        val adapter = StoreAdapter(GlideImageLoader(requireContext())) { itemView, item ->
+            val bundle = Bundle()
+            //val extras = FragmentNavigatorExtras(itemView.imageView to "header_image")
+            itemView.findNavController().navigate(R.id.action_storeListFragment_to_storeDetailFragment, bundle,
+                null, null)
 
         }
         adapter.updateList(list)

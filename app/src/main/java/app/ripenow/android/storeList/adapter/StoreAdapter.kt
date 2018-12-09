@@ -9,7 +9,7 @@ import app.ripenow.android.core.image.ImageLoader
 import app.ripenow.android.core.model.StoreItem
 import kotlinx.android.synthetic.main.store_item.view.*
 
-class StoreAdapter(val imageLoader: ImageLoader, val onClick: (StoreItem) -> Unit):
+class StoreAdapter(val imageLoader: ImageLoader, val onClick: (View, StoreItem) -> Unit):
     RecyclerView.Adapter<StoreAdapter.ViewHolder>() {
 
     private val list: MutableList<StoreItem> = mutableListOf()
@@ -51,7 +51,7 @@ class StoreAdapter(val imageLoader: ImageLoader, val onClick: (StoreItem) -> Uni
                 itemView.txtStatus.visibility = View.VISIBLE
             }
             itemView.setOnClickListener {
-                onClick.invoke(item)
+                onClick.invoke(it, item)
             }
         }
 
