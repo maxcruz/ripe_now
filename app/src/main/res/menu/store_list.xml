@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/new_game"
-          android:icon="@drawable/"
-          android:title="@string/new_game"
-          android:showAsAction="ifRoom"/>
+<menu xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      tools:ignore="AlwaysShowAction">
+
+    <item android:id="@+id/map"
+          android:icon="@drawable/ic_map"
+          android:title="@string/menu_map"
+          app:showAsAction="always" />
+
+    <item android:id="@+id/search"
+          android:icon="@drawable/ic_search"
+          android:title="@string/menu_search"
+          app:showAsAction="always"/>
+
+    <item android:id="@+id/filter_frequent"
+          android:title="@string/menu_frequent_stores"
+          app:showAsAction="never"/>
+
+    <item android:id="@+id/filter_activity"
+          android:title="@string/menu_more_activity"
+          app:showAsAction="never"/>
 
 </menu>
