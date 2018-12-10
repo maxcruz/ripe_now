@@ -5,4 +5,6 @@
     <string name="menu_frequent_stores">Frequent Stores</string>
     <string name="menu_more_activity">More Activity</string>
     <string name="store_item_closed">CLOSED</string>
+    <string name="button_not_ripe">NOT RIPE!</string>
+    <string name="button_ripe">RIPE!</string>
 </resources>

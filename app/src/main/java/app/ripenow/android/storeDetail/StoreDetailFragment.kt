@@ -12,6 +12,7 @@ import app.ripenow.android.core.image.ImageLoader
 import app.ripenow.android.core.model.Product
 import app.ripenow.android.core.model.Store
 import app.ripenow.android.storeDetail.adapter.ProductAdapter
+import app.ripenow.android.storeDetail.dialog.RipeDialogFragment
 import kotlinx.android.synthetic.main.fragment_store_detail.*
 import kotlinx.coroutines.Dispatchers.Main
 import kotlinx.coroutines.GlobalScope
@@ -82,7 +83,8 @@ class StoreDetailFragment : Fragment() {
 
     private fun loadProducts() {
         val adapter = ProductAdapter(GlideImageLoader(requireContext())) { item ->
-
+            val ripeDialog = RipeDialogFragment.newInstance(item)
+            ripeDialog.show(requireActivity().supportFragmentManager, "fragment_ripe")
         }
         adapter.updateList(list)
         recyclerView.adapter = adapter
