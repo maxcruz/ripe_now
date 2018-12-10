@@ -17,7 +17,7 @@
     </style>
 
     <style name="AppThemeActionBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
-        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="FirebaseUI.AuthMethodPicker.Logo">

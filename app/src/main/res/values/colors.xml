@@ -11,6 +11,7 @@
     <color name="materialOrange50">#FFF3E0</color>
     <color name="materialRed500">#F44336</color>
     <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
     <color name="blackAlpha50">#80000000</color>
     <color name="materialBlueGray300">#78909c</color>
 
