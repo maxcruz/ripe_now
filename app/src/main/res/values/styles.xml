@@ -16,6 +16,10 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="AppThemeActionBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
     <style name="FirebaseUI.AuthMethodPicker.Logo">
         <item name="android:layout_width">@dimen/login_logo_size</item>
         <item name="android:layout_height">@dimen/login_logo_size</item>
