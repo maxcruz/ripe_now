@@ -1,3 +1,7 @@
 package app.ripenow.android.core.model
 
-data class Location(val latitude: Double, val longitude: Double)
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
+data class Location(val latitude: Double, val longitude: Double): Parcelable

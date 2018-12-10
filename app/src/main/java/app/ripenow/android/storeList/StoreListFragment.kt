@@ -39,6 +39,7 @@ class StoreListFragment : Fragment() {
         setHasOptionsMenu(true)
         val adapter = StoreAdapter(GlideImageLoader(requireContext())) { itemView, item ->
             val bundle = Bundle()
+            bundle.putParcelable("storeItem", item)
             //val extras = FragmentNavigatorExtras(itemView.imageView to "header_image")
             itemView.findNavController().navigate(R.id.action_storeListFragment_to_storeDetailFragment, bundle,
                 null, null)

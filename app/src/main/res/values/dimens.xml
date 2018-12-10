@@ -12,4 +12,5 @@
     <dimen name="store_item_chip_margin">8dp</dimen>
     <dimen name="store_item_address_margin">12dp</dimen>
     <dimen name="card_radius">10dp</dimen>
+    <dimen name="store_banner_height">200dp</dimen>
 </resources>
