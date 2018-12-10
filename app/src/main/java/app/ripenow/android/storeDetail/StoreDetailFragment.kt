@@ -10,7 +10,7 @@ import app.ripenow.android.R
 import app.ripenow.android.core.image.GlideImageLoader
 import app.ripenow.android.core.image.ImageLoader
 import app.ripenow.android.core.model.Product
-import app.ripenow.android.core.model.StoreItem
+import app.ripenow.android.core.model.Store
 import app.ripenow.android.storeDetail.adapter.ProductAdapter
 import kotlinx.android.synthetic.main.fragment_store_detail.*
 import kotlinx.coroutines.Dispatchers.Main
@@ -46,8 +46,8 @@ class StoreDetailFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         (requireActivity() as AppCompatActivity).setSupportActionBar(toolbar)
         setHasOptionsMenu(true)
-        val storeItem: StoreItem? = arguments?.getParcelable("storeItem")
-        storeItem?.let {
+        val store: Store? = arguments?.getParcelable("storeItem")
+        store?.let {
             loadStore(it)
         }
     }
@@ -74,7 +74,7 @@ class StoreDetailFragment : Fragment() {
         return super.onOptionsItemSelected(item)
     }
 
-    private fun loadStore(store: StoreItem) {
+    private fun loadStore(store: Store) {
         imageLoader.load(imgBanner, store.url)
         toolbar.title = store.name
         loadProducts()

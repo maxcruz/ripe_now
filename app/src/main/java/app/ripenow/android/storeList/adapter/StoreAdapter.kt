@@ -6,15 +6,15 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import app.ripenow.android.R
 import app.ripenow.android.core.image.ImageLoader
-import app.ripenow.android.core.model.StoreItem
+import app.ripenow.android.core.model.Store
 import kotlinx.android.synthetic.main.store_item.view.*
 
-class StoreAdapter(val imageLoader: ImageLoader, val onClick: (View, StoreItem) -> Unit):
+class StoreAdapter(val imageLoader: ImageLoader, val onClick: (View, Store) -> Unit):
     RecyclerView.Adapter<StoreAdapter.ViewHolder>() {
 
-    private val list: MutableList<StoreItem> = mutableListOf()
+    private val list: MutableList<Store> = mutableListOf()
 
-    fun updateList(newList: List<StoreItem>) {
+    fun updateList(newList: List<Store>) {
         list.clear()
         list.addAll(newList)
         notifyDataSetChanged()
@@ -43,7 +43,7 @@ class StoreAdapter(val imageLoader: ImageLoader, val onClick: (View, StoreItem) 
             "85 Williams Ave. Washington Grove at 3km"
         )
 
-        fun bind(item: StoreItem) {
+        fun bind(item: Store) {
             imageLoader.load(itemView.imgStore, item.url)
             itemView.txtTitle.text = item.name
             itemView.txtAddress.text = address[item.location.latitude.toInt()]

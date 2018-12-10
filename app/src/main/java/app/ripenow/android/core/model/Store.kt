@@ -4,4 +4,4 @@ import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-data class StoreItem(val url: String, val name: String, val location: Location, val open: Boolean): Parcelable
+data class Store(val url: String, val name: String, val location: Location, val open: Boolean): Parcelable
