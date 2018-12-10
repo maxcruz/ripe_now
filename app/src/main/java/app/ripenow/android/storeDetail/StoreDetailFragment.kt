@@ -6,6 +6,7 @@ import android.view.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import app.ripenow.android.R
+import kotlinx.android.synthetic.main.fragment_store_detail.*
 
 class StoreDetailFragment : Fragment() {
 
@@ -15,6 +16,7 @@ class StoreDetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        (requireActivity() as AppCompatActivity).setSupportActionBar(toolbar)
         setHasOptionsMenu(true)
     }
 

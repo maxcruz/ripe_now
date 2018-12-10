@@ -28,7 +28,7 @@ import kotlinx.coroutines.launch
 class SplashFragment : Fragment(), Authenticable by FirebaseAuthentication()  {
 
     companion object {
-        const val DELAY = 5000L
+        const val DELAY = 3000L
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -64,7 +64,7 @@ class SplashFragment : Fragment(), Authenticable by FirebaseAuthentication()  {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == RC_SIGN_IN) {
             onAuthenticationResult(resultCode, data) {
-                layout.findNavController().navigate(R.id.action_splashFragment_to_storeListFragment)
+                layout.findNavController().navigate(R.id.action_splashFragment_to_mainActivity)
             }
         }
     }
