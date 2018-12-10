@@ -65,6 +65,7 @@ class SplashFragment : Fragment(), Authenticable by FirebaseAuthentication()  {
         if (requestCode == RC_SIGN_IN) {
             onAuthenticationResult(resultCode, data) {
                 layout.findNavController().navigate(R.id.action_splashFragment_to_mainActivity)
+                requireActivity().finish()
             }
         }
     }
