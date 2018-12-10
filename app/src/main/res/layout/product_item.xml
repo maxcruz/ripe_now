@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/store_height"
+        android:layout_margin="@dimen/store_item_margin"
+        app:cardCornerRadius="@dimen/card_radius"
+        app:cardElevation="@dimen/store_item_elevation">
+
+
+    <ImageView
+            android:id="@+id/imgProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:src="@drawable/ic_ripe_now"
+            android:layout_marginTop="@dimen/store_product_margin_top"
+            android:layout_marginBottom="@dimen/store_product_margin_bottom"
+            android:layout_marginStart="@dimen/store_product_margin_start"
+            android:layout_marginEnd="@dimen/store_product_margin_end"
+            tools:ignore="ContentDescription"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/store_product_ripe_margin"
+            android:layout_gravity="bottom">
+
+        <TextView
+                android:id="@+id/txtNotRipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/materialBlueGray300"
+                android:drawableStart="@drawable/ic_apple_outline"
+                app:layout_constraintStart_toStartOf="parent"
+
+                tools:text="10"/>
+
+        <TextView
+                android:id="@+id/txtRipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/materialBlueGray300"
+                android:drawableEnd="@drawable/ic_apple"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="250"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
